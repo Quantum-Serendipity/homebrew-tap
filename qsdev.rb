@@ -5,12 +5,12 @@
 class Qsdev < Formula
   desc "Secure developer environment bootstrapping tool"
   homepage "https://github.com/Quantum-Serendipity/gdev-secure-devenv-bootstrap"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Quantum-Serendipity/gdev-secure-devenv-bootstrap/releases/download/v0.1.0/qsdev_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "1348d358c2635e6ceb0232015f3fc12203f1a03e779f5ed746a473f2352681a7"
+      url "https://github.com/Quantum-Serendipity/gdev-secure-devenv-bootstrap/releases/download/v0.1.1/qsdev_0.1.1_Darwin_x86_64.tar.gz"
+      sha256 "7d3415c0130dc921816ec4b0324342d551adc9631db42f2c6b6b994cfab7d9d5"
 
       define_method(:install) do
         bin.install "qsdev"
@@ -20,8 +20,8 @@ class Qsdev < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Quantum-Serendipity/gdev-secure-devenv-bootstrap/releases/download/v0.1.0/qsdev_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "dda2b6b4e3cb8af1d5d834357b3e33d22d4d5bd3327e90b72e94e9a3b4fdfda9"
+      url "https://github.com/Quantum-Serendipity/gdev-secure-devenv-bootstrap/releases/download/v0.1.1/qsdev_0.1.1_Darwin_arm64.tar.gz"
+      sha256 "c0b6ff60d890f7543dee7d4d92b2f39b00b593b69072b363f533d98b44f0ba3e"
 
       define_method(:install) do
         bin.install "qsdev"
@@ -34,8 +34,8 @@ class Qsdev < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Quantum-Serendipity/gdev-secure-devenv-bootstrap/releases/download/v0.1.0/qsdev_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "24cb4e6eed547e627616de5bc1169a4d907863aa570b9ed6ffb93a25b56b1981"
+      url "https://github.com/Quantum-Serendipity/gdev-secure-devenv-bootstrap/releases/download/v0.1.1/qsdev_0.1.1_Linux_x86_64.tar.gz"
+      sha256 "9eb27d4e04e733afe558c67510d8b90d93010d579435ac8eaeaea4fd72b75661"
       define_method(:install) do
         bin.install "qsdev"
         bash_completion.install "completions/qsdev.bash" => "qsdev"
@@ -44,8 +44,8 @@ class Qsdev < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Quantum-Serendipity/gdev-secure-devenv-bootstrap/releases/download/v0.1.0/qsdev_0.1.0_Linux_arm64.tar.gz"
-      sha256 "8611ce844d9cf7e2938ad818324d876d99be8b5ca23976a636e81f9afbd91567"
+      url "https://github.com/Quantum-Serendipity/gdev-secure-devenv-bootstrap/releases/download/v0.1.1/qsdev_0.1.1_Linux_arm64.tar.gz"
+      sha256 "c23ee749e88838353476885f51a8554ce8850479d51603405cff448990e9d230"
       define_method(:install) do
         bin.install "qsdev"
         bash_completion.install "completions/qsdev.bash" => "qsdev"
