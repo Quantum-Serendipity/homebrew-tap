@@ -5,12 +5,12 @@
 class Qsdev < Formula
   desc "Secure developer environment bootstrapping tool"
   homepage "https://github.com/Quantum-Serendipity/qsdev"
-  version "0.3.5"
+  version "0.5.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Quantum-Serendipity/qsdev/releases/download/v0.3.5/qsdev_0.3.5_Darwin_x86_64.tar.gz"
-      sha256 "bfb280ebb06b3813e856d982a701e205dceee842734309d9993aadfb40b513d1"
+      url "https://github.com/Quantum-Serendipity/qsdev/releases/download/v0.5.0/qsdev_0.5.0_Darwin_x86_64.tar.gz"
+      sha256 "8d270f705d2bde712a827b8511fef405d432c8062f4b1d0acbf5d9075cced8e0"
 
       define_method(:install) do
         bin.install "qsdev"
@@ -20,8 +20,8 @@ class Qsdev < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Quantum-Serendipity/qsdev/releases/download/v0.3.5/qsdev_0.3.5_Darwin_arm64.tar.gz"
-      sha256 "86f147d642b6592774142f668d94ca8c6b9c0aacc8eb11bc41a15774cb70279a"
+      url "https://github.com/Quantum-Serendipity/qsdev/releases/download/v0.5.0/qsdev_0.5.0_Darwin_arm64.tar.gz"
+      sha256 "7bbd4bbbb54aa7cce242610a24e9c223566598503829d435d967919cac3056b7"
 
       define_method(:install) do
         bin.install "qsdev"
@@ -34,8 +34,8 @@ class Qsdev < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Quantum-Serendipity/qsdev/releases/download/v0.3.5/qsdev_0.3.5_Linux_x86_64.tar.gz"
-      sha256 "30071348e6061a02e91d8605476bfb119b150b0029214145fb41eb1cf0ed9fb1"
+      url "https://github.com/Quantum-Serendipity/qsdev/releases/download/v0.5.0/qsdev_0.5.0_Linux_x86_64.tar.gz"
+      sha256 "eec68bf533137b5a020e671e7d1f7b1a843814050d295748232e319c80738b32"
       define_method(:install) do
         bin.install "qsdev"
         bash_completion.install "completions/qsdev.bash" => "qsdev"
@@ -44,8 +44,8 @@ class Qsdev < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Quantum-Serendipity/qsdev/releases/download/v0.3.5/qsdev_0.3.5_Linux_arm64.tar.gz"
-      sha256 "5e494dc4a586e633ad0778f19a47fcf84a85c6bb962e704f58d99e66102c77bd"
+      url "https://github.com/Quantum-Serendipity/qsdev/releases/download/v0.5.0/qsdev_0.5.0_Linux_arm64.tar.gz"
+      sha256 "c1e97d6dd6c7b59a1ba2b210eccaf015c360e78c8c3036ecc72fd76b895ee1e2"
       define_method(:install) do
         bin.install "qsdev"
         bash_completion.install "completions/qsdev.bash" => "qsdev"
