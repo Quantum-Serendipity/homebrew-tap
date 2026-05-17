@@ -10,7 +10,7 @@ class Qsdev < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Quantum-Serendipity/qsdev/releases/download/v0.6.1/qsdev_0.6.1_Darwin_x86_64.tar.gz"
-      sha256 "6daa8aa5a4816fc74a51d3433671600b02c69ec8d26dd5f1a41d10d66a1bad0b"
+      sha256 "9363b6977db4d6648bf163239b8e14016bae57172a47dc38c05eaf8fb866d30b"
 
       define_method(:install) do
         bin.install "qsdev"
@@ -21,7 +21,7 @@ class Qsdev < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Quantum-Serendipity/qsdev/releases/download/v0.6.1/qsdev_0.6.1_Darwin_arm64.tar.gz"
-      sha256 "5f868d0c5341c447f05260da3f0b14e6ac8825f88baac3ee03d18f4c8cdadc2b"
+      sha256 "d8c2cb8cfcbc79d74b348fec78eb643f1917f82e73282ddda4d7ebc8ece1db84"
 
       define_method(:install) do
         bin.install "qsdev"
@@ -35,7 +35,7 @@ class Qsdev < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Quantum-Serendipity/qsdev/releases/download/v0.6.1/qsdev_0.6.1_Linux_x86_64.tar.gz"
-      sha256 "8e0ff8fe24fe4e4c31bab62ae4b56e417be639e021fb58d8979f95be23b55487"
+      sha256 "f436f5ed5ed4ad5ca575bbf5d3c8750cfd3bf67f0cca4de60a494bcd54aae918"
       define_method(:install) do
         bin.install "qsdev"
         bash_completion.install "completions/qsdev.bash" => "qsdev"
@@ -45,7 +45,7 @@ class Qsdev < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Quantum-Serendipity/qsdev/releases/download/v0.6.1/qsdev_0.6.1_Linux_arm64.tar.gz"
-      sha256 "3a4fb37037a83b3ae433b2a2c4fe2bdddf513e2d3f4990ed6771f98b8def775e"
+      sha256 "c82033e2db3aa9a46d4a1622d491c9248e8ae0f642e529feb1a09a4558dff0a3"
       define_method(:install) do
         bin.install "qsdev"
         bash_completion.install "completions/qsdev.bash" => "qsdev"
