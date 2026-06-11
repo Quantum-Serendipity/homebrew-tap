@@ -4,22 +4,22 @@ cask "qsdev" do
 
   on_macos do
     on_intel do
-      sha256 "beb76ef973070abc4df5c14dad4dfec1838b805bb826c153529b1d724f0db95a"
+      sha256 "6236df792f4c687f301a61db82841b08bb0f609d8186825ad5dc77dc03e247f0"
       url "https://github.com/Quantum-Serendipity/qsdev/releases/download/v#{version}/qsdev_#{version}_Darwin_x86_64.tar.gz"
     end
     on_arm do
-      sha256 "45f94ba5c0ebfd3a1011aa1e341596e6d2c82e9fe6683cac5c07a4c58a96cabb"
+      sha256 "3afddd819f17c61835c100238e2371d34ce79b999d40e591beb516276d6ef418"
       url "https://github.com/Quantum-Serendipity/qsdev/releases/download/v#{version}/qsdev_#{version}_Darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "432e9b1be0995a2db3c2bdbc94a90e36575feb3018fed53a95f5341136cafe53"
+      sha256 "cf592ed28a930fe3b00b4604eea210e565c85374757fbad2cb417664ef23e3c1"
       url "https://github.com/Quantum-Serendipity/qsdev/releases/download/v#{version}/qsdev_#{version}_Linux_x86_64.tar.gz"
     end
     on_arm do
-      sha256 "c529532e2935f89882bfd2e46659074051d872b76d264d46e0f27778759efd21"
+      sha256 "12353b3ca287b3aa3a74ff851fe2a069c84af756762d6f9b25068ba171488916"
       url "https://github.com/Quantum-Serendipity/qsdev/releases/download/v#{version}/qsdev_#{version}_Linux_arm64.tar.gz"
     end
   end
